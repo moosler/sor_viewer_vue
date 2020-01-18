@@ -2,6 +2,10 @@
 node_modules
 /dist
 
+# ignore test data files
+/src/assets/data/dump.json
+/src/assets/data/trace.json
+
 # local env files
 .env.local
 .env.*.local

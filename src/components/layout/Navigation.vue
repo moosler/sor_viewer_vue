@@ -1,16 +1,15 @@
 
 <template>
   <v-container>
-    <v-navigation-drawer v-model="drawer" app clipped>
-      <!-- <v-navigation-drawer v-model="drawer"  
-        :color="color"
-        :expand-on-hover="expandOnHover"
-        :mini-variant="miniVariant"
-        :right="right"
-        :src="bg"
-        app
-        clipped
-      >-->
+    <v-navigation-drawer
+      v-model="drawer"
+      :mini-variant="miniVariant"
+      :expand-on-hover="expandOnHover"
+      :right="right"
+      :color="color"
+      app
+      clipped
+    >
       <v-list nav dense>
         <v-list-item two-line>
           <v-list-item-avatar>
@@ -35,33 +34,40 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-
-    <v-app-bar app clipped-left>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>OTDR-Viewer</v-toolbar-title>
-    </v-app-bar>
+    <Appbar v-on:collapseNav="drawer = !drawer" />
   </v-container>
 </template>
 
 <script>
+import Appbar from "./Appbar";
+
 export default {
   name: "Navigation",
+  components: {
+    Appbar
+  },
   data() {
     return {
+      color: "primary",
       drawer: true,
       items: [
-        { title: "Dashboard", icon: "mdi-view-dashboard", link: "Home" },
+        { title: "Home", icon: "mdi-view-dashboard", link: "Home" },
         { title: "Settings", icon: "mdi-settings", link: "Settings" },
         { title: "Test", icon: "mdi-image", link: "Test" },
         { title: "About", icon: "mdi-help-box", link: "About" }
       ],
-      color: "primary",
-      colors: ["primary", "blue", "success", "red", "teal"],
-      right: true,
-      miniVariant: false,
-      expandOnHover: false,
-      background: false
+      miniVariant: true,
+      expandOnHover: true,
+      right: false
+      // background: false,
     };
   }
 };
 </script>
+
+
+<style scoped>
+* {
+  color: white;
+}
+</style>
