@@ -1,20 +1,12 @@
 
 <template>
   <v-container>
-    <v-app-bar app clipped-left :color="color">
+    <v-app-bar app clipped-left :color="colors[2]">
       <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
       <v-app-bar-nav-icon v-on:click="$emit('collapseNav')" />
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
         <span class="hidden-sm-and-down">OTDR-Viewer</span>
       </v-toolbar-title>
-      <v-text-field
-        flat
-        solo-inverted
-        hide-details
-        prepend-inner-icon="mdi-magnify"
-        label="Search"
-        class="hidden-sm-and-down"
-      />
       <v-spacer />
       <v-btn icon>
         <v-icon>mdi-apps</v-icon>
@@ -44,7 +36,7 @@ export default {
   name: "Appbar",
   data() {
     return {
-      color: "primary",
+      drawer: true,
       colors: ["primary", "blue", "success", "red", "teal"]
     };
   }

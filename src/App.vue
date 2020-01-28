@@ -1,7 +1,6 @@
 <template>
   <v-app id="inspire">
-    <!-- <Test /> -->
-    <Navigation />
+    <Appbar v-on:collapseNav="drawer = !drawer" />
     <v-content>
       <router-view></router-view>
       <v-container class="fill-height" fluid>
@@ -18,8 +17,7 @@
 </template>
 
 <script>
-import Navigation from "./components/layout/Navigation";
-// import Test from "./components/layout/Test";
+import Appbar from "./components/layout/Appbar";
 export default {
   props: {
     source: String
@@ -31,8 +29,7 @@ export default {
     this.$vuetify.theme.dark = false;
   },
   components: {
-    // Test
-    Navigation
+    Appbar
   }
 };
 </script>
