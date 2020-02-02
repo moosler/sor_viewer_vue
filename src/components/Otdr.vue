@@ -1,20 +1,20 @@
 <template>
-  <v-container>
-    <div class="parent">
-      <div class="Selector">
-        <FileSelector />
+  <v-app>
+    <div class="grid-container">
+      <div class="file">
+        <FileSelector v-model="filename" />
       </div>
-      <div class="Chart">
+      <div class="trace">
         <Chart />
       </div>
-      <div class="Events">
+      <div class="events">
         <Events />
       </div>
-      <div class="Properties">
-        <Properties />
+      <div class="properties">
+        <Properties v-bind:props="props" />
       </div>
     </div>
-  </v-container>
+  </v-app>
 </template>
 
 <script>
@@ -22,43 +22,56 @@ import FileSelector from "./FileSelector";
 import Chart from "./Chart";
 import Events from "./Events";
 import Properties from "./Properties";
+
+import jsonfile from "../assets/data/EXFO_FTB7400_1550_U.json";
 export default {
   components: {
     FileSelector,
     Chart,
     Events,
     Properties
+  },
+  computed: {
+    props() {
+      return jsonfile;
+    }
+  },
+  data() {
+    return {
+      filename: ""
+    };
   }
 };
 </script>
 <style>
-.parent {
+.grid-container {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: 10% auto 15%;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "File Trace Properties" "File Events Properties";
+  grid-template-columns: 20% auto 20%;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "file trace properties" "file events properties";
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  margin: 7px;
 }
 
-.Selector {
-  /* grid-area: 1 / 1 / 3 / 2; */
-  grid-area: File;
-  /* class="grey lighten-3"  */
-  align-content: center;
-  justify-content: center;
+.file {
+  grid-area: file;
+  border: 1px solid grey;
 }
-.Chart {
-  /* grid-area: 1 / 2 / 2 / 3; */
-  grid-area: Trace;
+
+.trace {
+  grid-area: trace;
+  border: 1px solid grey;
 }
-.Events {
-  /* grid-area: 2 / 2 / 3 / 3; */
-  grid-area: Events;
+
+.events {
+  grid-area: events;
+  border: 1px solid grey;
 }
-.Properties {
-  /* grid-area: 1 / 3 / 3 / 4; */
-  grid-area: Properties;
+
+.properties {
+  grid-area: properties;
+  border: 1px solid grey;
 }
 </style>

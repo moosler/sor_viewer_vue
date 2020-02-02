@@ -3,11 +3,6 @@
     <Appbar v-on:collapseNav="drawer = !drawer" />
     <v-content>
       <router-view></router-view>
-      <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
-          <v-col class="shrink"></v-col>
-        </v-row>
-      </v-container>
     </v-content>
 
     <v-footer app>
