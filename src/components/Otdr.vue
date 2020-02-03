@@ -5,10 +5,10 @@
         <FileSelector v-model="filename" />
       </div>
       <div class="trace">
-        <Chart />
+        <Chart v-bind:points="datapoints" />
       </div>
       <div class="events">
-        <Events />
+        <Events v-bind:events="events" />
       </div>
       <div class="properties">
         <Properties v-bind:props="props" />
@@ -24,6 +24,7 @@ import Events from "./Events";
 import Properties from "./Properties";
 
 import jsonfile from "../assets/data/EXFO_FTB7400_1550_U.json";
+import jsonPoints from "../assets/data/points.json";
 export default {
   components: {
     FileSelector,
@@ -33,11 +34,22 @@ export default {
   },
   computed: {
     props() {
+      return this.getProps();
+    },
+    datapoints() {
+      return jsonPoints;
+    }
+  },
+  methods: {
+    getProps() {
+      this.events = jsonfile.keyevents;
+      delete jsonfile.keyevents;
       return jsonfile;
     }
   },
   data() {
     return {
+      events: {},
       filename: ""
     };
   }
@@ -46,9 +58,9 @@ export default {
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: 20% 60% 20%;
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40% auto;
   grid-template-areas: "file trace properties" "file events properties";
   grid-column-gap: 5px;
   grid-row-gap: 5px;

@@ -2,7 +2,6 @@
 <template>
   <v-container>
     <v-app-bar app clipped-left :color="colors[2]">
-      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
       <v-app-bar-nav-icon v-on:click="$emit('collapseNav')" />
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
         <span class="hidden-sm-and-down">OTDR-Viewer</span>
