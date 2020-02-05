@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div>
     <div class="grid-container">
       <div class="file">
         <FileSelector v-model="filename" />
@@ -14,7 +14,7 @@
         <Properties v-bind:props="props" />
       </div>
     </div>
-  </v-app>
+  </div>
 </template>
 
 <script>
@@ -25,6 +25,9 @@ import Properties from "./Properties";
 
 import jsonfile from "../assets/data/EXFO_FTB7400_1550_U.json";
 import jsonPoints from "../assets/data/points.json";
+
+import sor from "../assets/js/sor.js";
+
 export default {
   components: {
     FileSelector,
@@ -35,6 +38,9 @@ export default {
   computed: {
     props() {
       return this.getProps();
+    },
+    test() {
+      return sor;
     },
     datapoints() {
       return jsonPoints;
@@ -60,7 +66,7 @@ export default {
   display: grid;
   grid-template-columns: 20% 60% 20%;
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-rows: 40% auto;
+  grid-template-rows: 40% 60%;
   grid-template-areas: "file trace properties" "file events properties";
   grid-column-gap: 5px;
   grid-row-gap: 5px;

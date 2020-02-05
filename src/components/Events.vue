@@ -19,6 +19,8 @@
         :headers="extractHeaders(events['events'][0])"
         :items="events['events']"
         hide-default-footer
+        :items-per-page="100"
+        dense
       ></v-data-table>
     </v-card>
   </div>
