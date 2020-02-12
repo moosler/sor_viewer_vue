@@ -4,20 +4,16 @@
       <v-card-title>
         <span class="title font-weight-bold">Summary</span>
       </v-card-title>
-      <v-data-table
-        :headers="extractHeaders(events['summary'])"
-        :items="[events['summary']]"
-        hide-default-footer
-      ></v-data-table>
+      <v-data-table :headers="extractHeaders(summary)" :items="[summary]" hide-default-footer></v-data-table>
     </v-card>
     <v-card outlined>
       <v-card-title>
         <span class="title font-weight-bold">Events</span>
       </v-card-title>
       <v-data-table
-        v-if="events['events']"
-        :headers="extractHeaders(events['events'][0])"
-        :items="events['events']"
+        v-if="events"
+        :headers="extractHeaders(events[0])"
+        :items="events"
         hide-default-footer
         :items-per-page="100"
         dense
@@ -29,7 +25,8 @@
 <script>
 export default {
   props: {
-    events: Object
+    events: Array,
+    summary: Object
   },
   data() {
     return {

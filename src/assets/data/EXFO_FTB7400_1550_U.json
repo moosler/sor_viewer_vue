@@ -1,413 +1,829 @@
 {
-    "genparams": {
-        "lang": "EN",
-        "cable ID": "TXX02519.L",
-        "fiber ID": "V.978",
-        "fiber type": "G.652 (standard SMF)",
-        "wavelength": 1550,
-        "location A": "Ipc1",
-        "location B": "Rathaus M",
-        "cable|fiber type": " ",
-        "build condition": "(as-built)",
-        "user offset": 0,
-        "user offset distance": 0,
-        "operator": "MM",
-        "comments": "Vorlauffaser,"
-    },
-    "supparams": {
-        "supplier": "TelemaxX",
-        "OTDR": " ",
-        "OTDR S/N": " ",
-        "module": "FTB-7400E-0234B-EA",
-        "module S/N": "729635",
-        "software": "2.0.72.0",
-        "other": " "
-    },
-    "fxdparams": {
-        "date/time": 1498568541,
-        "unit": "meters",
-        "wavelength": "1556.3 nm",
-        "acquisition offset": 0,
-        "acquisition offset distance": 0,
-        "number of pulse width entries": 1,
-        "pulse width": "100 ns",
-        "sample spacing": "0.00625 usec",
-        "num data points": 19587,
-        "index": "1.465000",
-        "BC": "-81.00 dB",
-        "num average": 34080,
-        "averaging time": "3 sec",
-        "range": "24.433760 km",
-        "acquisition range distance": 0,
-        "front panel offset": 0,
-        "noise floor level": 45830,
-        "noise floor scaling factor": 1000,
-        "power offset first point": 0,
-        "loss thr": "0.020 dB",
-        "refl thr": "-65.535 dB",
-        "EOT thr": "5.000 dB",
-        "trace type": "ST",
-        "X1": 0,
-        "Y1": 0,
-        "X2": 0,
-        "Y2": 0
-    },
-    "datapts": {
-        "number of Points": 19587,
-        "traces": 1,
-        "repeat": 19587,
-        "scaling": 0.1
-    },
-    "keyevents": {
-        "event number": 24,
-        "events": [
-            {
-                "number": 1,
-                "distance": 0,
-                "slope": "0.000",
-                "splice": "0.000",
-                "refl loss": "-61.667",
-                "event type": "1F9999LS",
-                "end of prev": "0.000",
-                "start of curr": "0.000",
-                "end of curr": "1438.000",
-                "start of next": "50063.000",
-                "peak": "313.000",
-                "comments": " "
-            },
-            {
-                "number": 2,
-                "distance": 50063,
-                "slope": "0.188",
-                "splice": "0.512",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "1438.000",
-                "start of curr": "50063.000",
-                "end of curr": "51438.000",
-                "start of next": "52500.000",
-                "peak": "50063.000",
-                "comments": " "
-            },
-            {
-                "number": 3,
-                "distance": 52500,
-                "slope": "0.160",
-                "splice": "0.184",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "51438.000",
-                "start of curr": "52500.000",
-                "end of curr": "53875.000",
-                "start of next": "60625.000",
-                "peak": "52500.000",
-                "comments": " "
-            },
-            {
-                "number": 4,
-                "distance": 60625,
-                "slope": "0.100",
-                "splice": "0.234",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "53875.000",
-                "start of curr": "60625.000",
-                "end of curr": "63188.000",
-                "start of next": "78188.000",
-                "peak": "60625.000",
-                "comments": " "
-            },
-            {
-                "number": 5,
-                "distance": 78188,
-                "slope": "0.159",
-                "splice": "-0.134",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "63188.000",
-                "start of curr": "78188.000",
-                "end of curr": "79563.000",
-                "start of next": "109438.000",
-                "peak": "79313.000",
-                "comments": " "
-            },
-            {
-                "number": 6,
-                "distance": 109438,
-                "slope": "0.222",
-                "splice": "0.133",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "79563.000",
-                "start of curr": "109438.000",
-                "end of curr": "110813.000",
-                "start of next": "111125.000",
-                "peak": "109438.000",
-                "comments": " "
-            },
-            {
-                "number": 7,
-                "distance": 111125,
-                "slope": "0.100",
-                "splice": "0.329",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "110813.000",
-                "start of curr": "111125.000",
-                "end of curr": "112500.000",
-                "start of next": "161188.000",
-                "peak": "111125.000",
-                "comments": " "
-            },
-            {
-                "number": 8,
-                "distance": 161188,
-                "slope": "0.142",
-                "splice": "0.055",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "112500.000",
-                "start of curr": "161188.000",
-                "end of curr": "162875.000",
-                "start of next": "328125.000",
-                "peak": "161188.000",
-                "comments": " "
-            },
-            {
-                "number": 9,
-                "distance": 328125,
-                "slope": "0.215",
-                "splice": "0.600",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "162875.000",
-                "start of curr": "328125.000",
-                "end of curr": "330250.000",
-                "start of next": "361563.000",
-                "peak": "328125.000",
-                "comments": " "
-            },
-            {
-                "number": 10,
-                "distance": 361563,
-                "slope": "0.186",
-                "splice": "-0.103",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "330250.000",
-                "start of curr": "361563.000",
-                "end of curr": "364125.000",
-                "start of next": "452563.000",
-                "peak": "364125.000",
-                "comments": " "
-            },
-            {
-                "number": 11,
-                "distance": 452563,
-                "slope": "0.224",
-                "splice": "0.092",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "364125.000",
-                "start of curr": "452563.000",
-                "end of curr": "454438.000",
-                "start of next": "509563.000",
-                "peak": "452563.000",
-                "comments": " "
-            },
-            {
-                "number": 12,
-                "distance": 509563,
-                "slope": "0.183",
-                "splice": "0.202",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "454438.000",
-                "start of curr": "509563.000",
-                "end of curr": "511500.000",
-                "start of next": "520125.000",
-                "peak": "509563.000",
-                "comments": " "
-            },
-            {
-                "number": 13,
-                "distance": 520125,
-                "slope": "0.100",
-                "splice": "1.094",
-                "refl loss": "-67.844",
-                "event type": "1F9999LS",
-                "end of prev": "511500.000",
-                "start of curr": "520125.000",
-                "end of curr": "522813.000",
-                "start of next": "587250.000",
-                "peak": "520563.000",
-                "comments": " "
-            },
-            {
-                "number": 14,
-                "distance": 587250,
-                "slope": "0.200",
-                "splice": "-0.089",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "522813.000",
-                "start of curr": "587250.000",
-                "end of curr": "589813.000",
-                "start of next": "662063.000",
-                "peak": "588438.000",
-                "comments": " "
-            },
-            {
-                "number": 15,
-                "distance": 662063,
-                "slope": "0.208",
-                "splice": "0.058",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "589813.000",
-                "start of curr": "662063.000",
-                "end of curr": "663875.000",
-                "start of next": "678563.000",
-                "peak": "662063.000",
-                "comments": " "
-            },
-            {
-                "number": 16,
-                "distance": 678563,
-                "slope": "0.197",
-                "splice": "0.225",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "663875.000",
-                "start of curr": "678563.000",
-                "end of curr": "680375.000",
-                "start of next": "710375.000",
-                "peak": "678563.000",
-                "comments": " "
-            },
-            {
-                "number": 17,
-                "distance": 710375,
-                "slope": "0.199",
-                "splice": "0.484",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "680375.000",
-                "start of curr": "710375.000",
-                "end of curr": "713625.000",
-                "start of next": "785688.000",
-                "peak": "710375.000",
-                "comments": " "
-            },
-            {
-                "number": 18,
-                "distance": 785688,
-                "slope": "0.190",
-                "splice": "0.084",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "713625.000",
-                "start of curr": "785688.000",
-                "end of curr": "789688.000",
-                "start of next": "816688.000",
-                "peak": "785688.000",
-                "comments": " "
-            },
-            {
-                "number": 19,
-                "distance": 816688,
-                "slope": "0.171",
-                "splice": "0.194",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "789688.000",
-                "start of curr": "816688.000",
-                "end of curr": "819125.000",
-                "start of next": "878500.000",
-                "peak": "816688.000",
-                "comments": " "
-            },
-            {
-                "number": 20,
-                "distance": 878500,
-                "slope": "0.187",
-                "splice": "0.213",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "819125.000",
-                "start of curr": "878500.000",
-                "end of curr": "881063.000",
-                "start of next": "927188.000",
-                "peak": "879625.000",
-                "comments": " "
-            },
-            {
-                "number": 21,
-                "distance": 927188,
-                "slope": "0.206",
-                "splice": "0.194",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "881063.000",
-                "start of curr": "927188.000",
-                "end of curr": "930313.000",
-                "start of next": "961750.000",
-                "peak": "927188.000",
-                "comments": " "
-            },
-            {
-                "number": 22,
-                "distance": 961750,
-                "slope": "0.158",
-                "splice": "0.120",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "930313.000",
-                "start of curr": "961750.000",
-                "end of curr": "964313.000",
-                "start of next": "979250.000",
-                "peak": "962125.000",
-                "comments": " "
-            },
-            {
-                "number": 23,
-                "distance": 979250,
-                "slope": "0.130",
-                "splice": "0.105",
-                "refl loss": "-2147483.648",
-                "event type": "0F9999LS",
-                "end of prev": "964313.000",
-                "start of curr": "979250.000",
-                "end of curr": "982125.000",
-                "start of next": "990250.000",
-                "peak": "979250.000",
-                "comments": " "
-            },
-            {
-                "number": 24,
-                "distance": 990250,
-                "slope": "0.754",
-                "splice": "0.000",
-                "refl loss": "-63.437",
-                "event type": "1E9999LS",
-                "end of prev": "982125.000",
-                "start of curr": "990250.000",
-                "end of curr": "1017375.000",
-                "start of next": "1224125.000",
-                "peak": "990750.000",
-                "comments": " "
+    "params": {
+        "GenParams": {
+            "lang": "EN",
+            "cable ID": "TXX02519.L",
+            "fiber ID": "V.978",
+            "fiber type": "G.652 (standard SMF)",
+            "wavelength": "1550 nm",
+            "location A": "Ipc1",
+            "location B": "Rathaus M",
+            "cable|fiber type": " ",
+            "build condition": "(as-built)",
+            "user offset": 0,
+            "user offset distance": 0,
+            "operator": "MM",
+            "comments": "Vorlauffaser,"
+        },
+        "SupParams": {
+            "supplier": "TelemaxX",
+            "OTDR": " ",
+            "OTDR S/N": " ",
+            "module": "FTB-7400E-0234B-EA",
+            "module S/N": "729635",
+            "software": "2.0.72.0",
+            "other": " "
+        },
+        "FxdParams": {
+            "date/time": 1498568541,
+            "unit": "meters",
+            "wavelength": "1556.3 nm",
+            "acquisition offset": 0,
+            "acquisition offset distance": 0,
+            "number of pulse width entries": 1,
+            "pulse width": "100 ns",
+            "sample spacing": "0.00625 usec",
+            "num data points": 19587,
+            "index": "1.465000",
+            "BC": "-81.00 dB",
+            "num average": 34080,
+            "averaging time": "3 sec",
+            "range": "25.05134332272184 km",
+            "dx": 0.0012789780631399317,
+            "ior": 1.465,
+            "sol": 0.299792458,
+            "resolution": 1.2789780631399317,
+            "acquisition range distance": 0,
+            "front panel offset": 0,
+            "noise floor level": 45830,
+            "noise floor scaling factor": 1000,
+            "power offset first point": 0,
+            "loss thr": "0.020 dB",
+            "refl thr": "-65.535 dB",
+            "EOT thr": "5.000 dB",
+            "trace type": "ST [standard trace]",
+            "X1": 0,
+            "Y1": 0,
+            "X2": 0,
+            "Y2": 0
+        },
+        "KeyEvents": {
+            "event number": 24,
+            "events": [
+                {
+                    "number": 1,
+                    "distance": "0.0000",
+                    "slope": "0.000",
+                    "splice": "0.000",
+                    "refl loss": "-61.667",
+                    "event type": "1F9999LS auto reflection",
+                    "end of prev": "0.0000",
+                    "start of curr": "0.0000",
+                    "end of curr": "0.0294",
+                    "start of next": "1.0245",
+                    "peak": "0.0064",
+                    "comments": " "
+                },
+                {
+                    "number": 2,
+                    "distance": "1.0245",
+                    "slope": "0.188",
+                    "splice": "0.512",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "0.0294",
+                    "start of curr": "1.0245",
+                    "end of curr": "1.0526",
+                    "start of next": "1.0743",
+                    "peak": "1.0245",
+                    "comments": " "
+                },
+                {
+                    "number": 3,
+                    "distance": "1.0743",
+                    "slope": "0.160",
+                    "splice": "0.184",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "1.0526",
+                    "start of curr": "1.0743",
+                    "end of curr": "1.1025",
+                    "start of next": "1.2406",
+                    "peak": "1.0743",
+                    "comments": " "
+                },
+                {
+                    "number": 4,
+                    "distance": "1.2406",
+                    "slope": "0.100",
+                    "splice": "0.234",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "1.1025",
+                    "start of curr": "1.2406",
+                    "end of curr": "1.2931",
+                    "start of next": "1.6000",
+                    "peak": "1.2406",
+                    "comments": " "
+                },
+                {
+                    "number": 5,
+                    "distance": "1.6000",
+                    "slope": "0.159",
+                    "splice": "-0.134",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "1.2931",
+                    "start of curr": "1.6000",
+                    "end of curr": "1.6281",
+                    "start of next": "2.2395",
+                    "peak": "1.6230",
+                    "comments": " "
+                },
+                {
+                    "number": 6,
+                    "distance": "2.2395",
+                    "slope": "0.222",
+                    "splice": "0.133",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "1.6281",
+                    "start of curr": "2.2395",
+                    "end of curr": "2.2676",
+                    "start of next": "2.2740",
+                    "peak": "2.2395",
+                    "comments": " "
+                },
+                {
+                    "number": 7,
+                    "distance": "2.2740",
+                    "slope": "0.100",
+                    "splice": "0.329",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "2.2676",
+                    "start of curr": "2.2740",
+                    "end of curr": "2.3022",
+                    "start of next": "3.2985",
+                    "peak": "2.2740",
+                    "comments": " "
+                },
+                {
+                    "number": 8,
+                    "distance": "3.2985",
+                    "slope": "0.142",
+                    "splice": "0.055",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "2.3022",
+                    "start of curr": "3.2985",
+                    "end of curr": "3.3330",
+                    "start of next": "6.7146",
+                    "peak": "3.2985",
+                    "comments": " "
+                },
+                {
+                    "number": 9,
+                    "distance": "6.7146",
+                    "slope": "0.215",
+                    "splice": "0.600",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "3.3330",
+                    "start of curr": "6.7146",
+                    "end of curr": "6.7581",
+                    "start of next": "7.3989",
+                    "peak": "6.7146",
+                    "comments": " "
+                },
+                {
+                    "number": 10,
+                    "distance": "7.3989",
+                    "slope": "0.186",
+                    "splice": "-0.103",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "6.7581",
+                    "start of curr": "7.3989",
+                    "end of curr": "7.4513",
+                    "start of next": "9.2611",
+                    "peak": "7.4513",
+                    "comments": " "
+                },
+                {
+                    "number": 11,
+                    "distance": "9.2611",
+                    "slope": "0.224",
+                    "splice": "0.092",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "7.4513",
+                    "start of curr": "9.2611",
+                    "end of curr": "9.2995",
+                    "start of next": "10.4275",
+                    "peak": "9.2611",
+                    "comments": " "
+                },
+                {
+                    "number": 12,
+                    "distance": "10.4275",
+                    "slope": "0.183",
+                    "splice": "0.202",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "9.2995",
+                    "start of curr": "10.4275",
+                    "end of curr": "10.4672",
+                    "start of next": "10.6437",
+                    "peak": "10.4275",
+                    "comments": " "
+                },
+                {
+                    "number": 13,
+                    "distance": "10.6437",
+                    "slope": "0.100",
+                    "splice": "1.094",
+                    "refl loss": "-67.844",
+                    "event type": "1F9999LS auto reflection",
+                    "end of prev": "10.4672",
+                    "start of curr": "10.6437",
+                    "end of curr": "10.6987",
+                    "start of next": "12.0173",
+                    "peak": "10.6526",
+                    "comments": " "
+                },
+                {
+                    "number": 14,
+                    "distance": "12.0173",
+                    "slope": "0.200",
+                    "splice": "-0.089",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "10.6987",
+                    "start of curr": "12.0173",
+                    "end of curr": "12.0697",
+                    "start of next": "13.5482",
+                    "peak": "12.0416",
+                    "comments": " "
+                },
+                {
+                    "number": 15,
+                    "distance": "13.5482",
+                    "slope": "0.208",
+                    "splice": "0.058",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "12.0697",
+                    "start of curr": "13.5482",
+                    "end of curr": "13.5853",
+                    "start of next": "13.8859",
+                    "peak": "13.5482",
+                    "comments": " "
+                },
+                {
+                    "number": 16,
+                    "distance": "13.8859",
+                    "slope": "0.197",
+                    "splice": "0.225",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "13.5853",
+                    "start of curr": "13.8859",
+                    "end of curr": "13.9230",
+                    "start of next": "14.5369",
+                    "peak": "13.8859",
+                    "comments": " "
+                },
+                {
+                    "number": 17,
+                    "distance": "14.5369",
+                    "slope": "0.199",
+                    "splice": "0.484",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "13.9230",
+                    "start of curr": "14.5369",
+                    "end of curr": "14.6034",
+                    "start of next": "16.0780",
+                    "peak": "14.5369",
+                    "comments": " "
+                },
+                {
+                    "number": 18,
+                    "distance": "16.0780",
+                    "slope": "0.190",
+                    "splice": "0.084",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "14.6034",
+                    "start of curr": "16.0780",
+                    "end of curr": "16.1599",
+                    "start of next": "16.7124",
+                    "peak": "16.0780",
+                    "comments": " "
+                },
+                {
+                    "number": 19,
+                    "distance": "16.7124",
+                    "slope": "0.171",
+                    "splice": "0.194",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "16.1599",
+                    "start of curr": "16.7124",
+                    "end of curr": "16.7623",
+                    "start of next": "17.9773",
+                    "peak": "16.7124",
+                    "comments": " "
+                },
+                {
+                    "number": 20,
+                    "distance": "17.9773",
+                    "slope": "0.187",
+                    "splice": "0.213",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "16.7623",
+                    "start of curr": "17.9773",
+                    "end of curr": "18.0298",
+                    "start of next": "18.9736",
+                    "peak": "18.0003",
+                    "comments": " "
+                },
+                {
+                    "number": 21,
+                    "distance": "18.9736",
+                    "slope": "0.206",
+                    "splice": "0.194",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "18.0298",
+                    "start of curr": "18.9736",
+                    "end of curr": "19.0376",
+                    "start of next": "19.6809",
+                    "peak": "18.9736",
+                    "comments": " "
+                },
+                {
+                    "number": 22,
+                    "distance": "19.6809",
+                    "slope": "0.158",
+                    "splice": "0.120",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "19.0376",
+                    "start of curr": "19.6809",
+                    "end of curr": "19.7334",
+                    "start of next": "20.0390",
+                    "peak": "19.6886",
+                    "comments": " "
+                },
+                {
+                    "number": 23,
+                    "distance": "20.0390",
+                    "slope": "0.130",
+                    "splice": "0.105",
+                    "refl loss": "-2147483.648",
+                    "event type": "0F9999LS auto loss/drop/gain",
+                    "end of prev": "19.7334",
+                    "start of curr": "20.0390",
+                    "end of curr": "20.0979",
+                    "start of next": "20.2641",
+                    "peak": "20.0390",
+                    "comments": " "
+                },
+                {
+                    "number": 24,
+                    "distance": "20.2641",
+                    "slope": "0.754",
+                    "splice": "0.000",
+                    "refl loss": "-63.437",
+                    "event type": "1E9999LS end reflection",
+                    "end of prev": "20.0979",
+                    "start of curr": "20.2641",
+                    "end of curr": "20.8192",
+                    "start of next": "25.0501",
+                    "peak": "20.2744",
+                    "comments": " "
+                }
+            ],
+            "summary": {
+                "total loss": "8.823",
+                "loss start": "0.0000",
+                "loss end": "20.2641",
+                "ORL": "34.406",
+                "ORL start": "0.0000",
+                "ORL finish": "20.2641"
             }
-        ],
-        "summary": {
-            "total loss": "8.823",
-            "loss start": "0.000000",
-            "loss end": "990250.000000",
-            "ORL": "34.406",
-            "ORL start": "0.000000",
-            "ORL finish": "990.250000"
+        },
+        "DataPts": {
+            "number of Points": 19587,
+            "traces": 1,
+            "repeat": 19587,
+            "scaling": 1
+        },
+        "Cksum": {
+            "checksum": 26395
         }
     },
-    "cksum": {
-        "checksum": 26395
+    "points": {
+        "yMin": 36.669000000000004,
+        "yMax": 37.927,
+        "points": [
+            [
+                0,
+                1.075
+            ],
+            [
+                0.001,
+                1.141
+            ],
+            [
+                0.002,
+                1.19
+            ],
+            [
+                0.003,
+                1.228
+            ],
+            [
+                0.004,
+                1.253
+            ],
+            [
+                0.005,
+                1.258
+            ],
+            [
+                0.006,
+                1.239
+            ],
+            [
+                0.007,
+                1.196
+            ],
+            [
+                0.008,
+                1.133
+            ],
+            [
+                0.009,
+                1.05
+            ],
+            [
+                0.01,
+                0.944
+            ],
+            [
+                0.011,
+                0.817
+            ],
+            [
+                0.012,
+                0.677
+            ],
+            [
+                0.013,
+                0.543
+            ],
+            [
+                0.014,
+                0.425
+            ],
+            [
+                0.015,
+                0.328
+            ],
+            [
+                0.016,
+                0.252
+            ],
+            [
+                0.017,
+                0.195
+            ],
+            [
+                0.018,
+                0.154
+            ],
+            [
+                0.019,
+                0.124
+            ],
+            [
+                0.02,
+                0.1
+            ],
+            [
+                0.021,
+                0.083
+            ],
+            [
+                0.022,
+                0.07
+            ],
+            [
+                0.023,
+                0.06
+            ],
+            [
+                0.024,
+                0.054
+            ],
+            [
+                0.025,
+                0.05
+            ],
+            [
+                0.026,
+                0.043
+            ],
+            [
+                0.027,
+                0.035
+            ],
+            [
+                0.028,
+                0.028
+            ],
+            [
+                0.029,
+                0.023
+            ],
+            [
+                0.03,
+                0.018
+            ],
+            [
+                0.031,
+                0.017
+            ],
+            [
+                0.032,
+                0.019
+            ],
+            [
+                0.033,
+                0.019
+            ],
+            [
+                0.034,
+                0.018
+            ],
+            [
+                0.035,
+                0.017
+            ],
+            [
+                0.036,
+                0.017
+            ],
+            [
+                0.037,
+                0.018
+            ],
+            [
+                0.038,
+                0.018
+            ],
+            [
+                0.039,
+                0.019
+            ],
+            [
+                0.04,
+                0.021
+            ],
+            [
+                0.041,
+                0.023
+            ],
+            [
+                0.042,
+                0.026
+            ],
+            [
+                0.043,
+                0.029
+            ],
+            [
+                0.044,
+                0.03
+            ],
+            [
+                0.045,
+                0.03
+            ],
+            [
+                0.046,
+                0.029
+            ],
+            [
+                0.047,
+                0.028
+            ],
+            [
+                0.048,
+                0.028
+            ],
+            [
+                0.049,
+                0.027
+            ],
+            [
+                0.05,
+                0.024
+            ],
+            [
+                0.051,
+                0.021
+            ],
+            [
+                0.052,
+                0.017
+            ],
+            [
+                0.053,
+                0.013
+            ],
+            [
+                0.054,
+                0.011
+            ],
+            [
+                0.055,
+                0.011
+            ],
+            [
+                0.056,
+                0.011
+            ],
+            [
+                0.057,
+                0.011
+            ],
+            [
+                0.058,
+                0.011
+            ],
+            [
+                0.059,
+                0.01
+            ],
+            [
+                0.06,
+                0.011
+            ],
+            [
+                0.061,
+                0.014
+            ],
+            [
+                0.062,
+                0.019
+            ],
+            [
+                0.063,
+                0.023
+            ],
+            [
+                0.064,
+                0.026
+            ],
+            [
+                0.065,
+                0.024
+            ],
+            [
+                0.066,
+                0.019
+            ],
+            [
+                0.067,
+                0.015
+            ],
+            [
+                0.068,
+                0.012
+            ],
+            [
+                0.069,
+                0.01
+            ],
+            [
+                0.07,
+                0.007
+            ],
+            [
+                0.071,
+                0.005
+            ],
+            [
+                0.072,
+                0.007
+            ],
+            [
+                0.073,
+                0.01
+            ],
+            [
+                0.074,
+                0.011
+            ],
+            [
+                0.075,
+                0.012
+            ],
+            [
+                0.076,
+                0.013
+            ],
+            [
+                0.077,
+                0.012
+            ],
+            [
+                0.078,
+                0.012
+            ],
+            [
+                0.079,
+                0.012
+            ],
+            [
+                0.08,
+                0.013
+            ],
+            [
+                0.081,
+                0.013
+            ],
+            [
+                0.082,
+                0.014
+            ],
+            [
+                0.083,
+                0.014
+            ],
+            [
+                0.084,
+                0.014
+            ],
+            [
+                0.085,
+                0.014
+            ],
+            [
+                0.086,
+                0.015
+            ],
+            [
+                0.087,
+                0.017
+            ],
+            [
+                0.088,
+                0.02
+            ],
+            [
+                0.089,
+                0.022
+            ],
+            [
+                0.09,
+                0.023
+            ],
+            [
+                0.091,
+                0.022
+            ],
+            [
+                0.092,
+                0.018
+            ],
+            [
+                0.093,
+                0.014
+            ],
+            [
+                0.094,
+                0.011
+            ],
+            [
+                0.095,
+                0.007
+            ],
+            [
+                0.096,
+                0.004
+            ],
+            [
+                0.097,
+                0.003
+            ],
+            [
+                0.098,
+                0.002
+            ],
+            [
+                0.099,
+                0.001
+            ],
+            [
+                0.1,
+                0
+            ]
+        ]
     }
 }

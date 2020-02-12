@@ -15,6 +15,7 @@
       filled
       prepend-icon="mdi-current-ac"
     ></v-file-input>
+    <v-btn small @click.prevent="loadDataChild()">Load Data</v-btn>
     <!-- </v-card> -->
   </div>
 </template>
@@ -22,7 +23,7 @@
 export default {
   data() {
     return {
-      items: ["JDSU MTS600", "EXfo"]
+      items: ["EXFO FTB7400 1550", "JDSU MTS600 1310", "Sample 1310"]
     };
   },
   computed: {
@@ -33,6 +34,11 @@ export default {
       set(val) {
         this.$emit("input", val);
       }
+    }
+  },
+  methods: {
+    loadDataChild() {
+      this.$emit("event", true);
     }
   }
 };
