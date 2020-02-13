@@ -5,10 +5,10 @@
 
     <div class="grid-container">
       <div class="file">
-        <FileSelector v-model="filename" @event="loadData" />
+        <FileSelector @event="loadData" />
       </div>
       <div class="trace">
-        <Chart v-bind:points="points" :key="chartKey" />
+        <Chart v-bind:points="points" :key="chartKey" :filename="filename" />
       </div>
       <div class="events">
         <Events v-bind:events="events" v-bind:summary="summary" :key="eventsKey" />
@@ -20,18 +20,20 @@
   </div>
 </template>
 
-<script src="@/assets/js/sor_bundle.js">
-</script>
 <script>
+//Components
 import FileSelector from "./FileSelector";
 import Chart from "./Chart";
 import Events from "./Events";
 import Properties from "./Properties";
 
+//Sample Files
 import sample1 from "@/assets/data/EXFO_FTB7400_1550_U.json";
 import sample2 from "@/assets/data/JDSU_MTS6000_1310_G.json";
 import sample3 from "@/assets/data/sample1310_lowDR.json";
-// import jsonPoints from "../assets/data/points.json";
+
+//bundle
+import SorReader from "@/assets/js/sor.js";
 
 export default {
   components: {
@@ -42,7 +44,7 @@ export default {
   },
   created() {
     this.parseSor();
-    this.setData(sample1);
+    this.loadSampleFile("Sample 1310");
   },
   computed: {
     // params() {
@@ -56,9 +58,11 @@ export default {
       this.loading = false;
     },
     setData(sample) {
-      this.events = sample.params.KeyEvents.events.slice();
-      delete sample.params.KeyEvents.events;
+      this.events = sample.params.KeyEvents.events;
       this.summary = sample.params.KeyEvents.summary;
+      /**
+       * @todo in the Parser: events and summary in own object
+       */
       this.points = sample.points;
       this.props = sample.params;
     },
@@ -67,25 +71,42 @@ export default {
       this.eventsKey += 1;
       this.propKey += 1;
     },
-    loadData(sample) {
-      if (sample) {
-        switch (this.filename) {
-          case "EXFO FTB7400 1550":
-            this.setData(sample1);
-            this.renderComponents();
-            break;
-          case "JDSU MTS600 1310":
-            this.setData(sample2);
-            this.renderComponents();
-            break;
-          case "Sample 1310":
-            this.setData(sample3);
-            break;
-          default:
-            this.setData(sample3);
-            this.renderComponents();
-            break;
-        }
+    loadSampleFile(sample) {
+      this.filename = sample;
+      switch (this.filename) {
+        case "EXFO FTB7400 1550":
+          this.setData(sample1);
+          this.renderComponents();
+          break;
+        case "JDSU MTS600 1310":
+          this.setData(sample2);
+          this.renderComponents();
+          break;
+        case "Sample 1310":
+          this.setData(sample3);
+          break;
+        default:
+          this.setData(sample3);
+          this.renderComponents();
+          break;
+      }
+    },
+    async loadData(file) {
+      //only if something is selected
+
+      if (file instanceof ArrayBuffer) {
+        let sor = new SorReader(
+          false,
+          {
+            browserMode: true
+          },
+          file
+        );
+        let data = await sor.parse();
+        await this.setData(data);
+        await this.renderComponents();
+      } else {
+        await this.loadSampleFile(file);
       }
     }
   },
@@ -96,7 +117,10 @@ export default {
       points: {},
       events: {},
       summary: {},
-      filename: ""
+      filename: "",
+      chartKey: 0,
+      eventsKey: 0,
+      propKey: 0
     };
   }
 };

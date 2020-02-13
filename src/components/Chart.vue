@@ -1,7 +1,7 @@
 <template>
   <v-card min-width="700px" width="100%" outlined>
     <v-card-title>
-      <span class="title font-weight-bold">Chart</span>
+      <span class="title font-weight-bold">Chart: {{filename}}</span>
     </v-card-title>
     <div id="mainchart">
       <v-chart :options="chartOptions" />
@@ -19,7 +19,8 @@ export default {
     "v-chart": ECharts
   },
   props: {
-    points: Object
+    points: Object,
+    filename: String
   },
   data() {
     return {
