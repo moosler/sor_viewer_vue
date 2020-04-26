@@ -81,6 +81,7 @@ export default class Parser {
                 if (unit.type === "Char") {
                     result = await this.parseCommand(unit, "read");
                     let append = false;
+                    /* eslint-disable no-prototype-builtins */
                     if (unit.hasOwnProperty('append')) {
                         append = unit.append;
                     }
