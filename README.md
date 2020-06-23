@@ -1,5 +1,10 @@
 # otdr_viewer
 
+## Introduction
+I'm not a vue specialist. So check out this repo: 
+[OTDR-Viewer](https://github.com/moosler/Sor-Viewer)
+This is the OTDR Viewer in Vanilla JavaScript.
+
 ## Project setup
 ```
 npm install
