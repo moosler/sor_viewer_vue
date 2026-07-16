@@ -1,4 +1,5 @@
 # DEPRECATED
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 # otdr_viewer
 
 ## Introduction
