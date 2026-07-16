@@ -1,3 +1,4 @@
+# DEPRECATED
 # otdr_viewer
 
 ## Introduction
